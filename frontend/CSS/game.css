@@ -1,0 +1,119 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background-image: url('/frontend/image/background.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.intro-container {
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+.welcome-message h1 {
+  font-size: 3em;
+  letter-spacing: 5px;
+  animation: zoomIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+
+.player-entry h2 {
+  font-size: 2em;
+  margin-top: 20px;
+  letter-spacing: 3px;
+  animation: slideUp 2s ease forwards;
+  opacity: 0;
+}
+
+#nextButton {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #c6c8c1;
+  border: none;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0; 
+  visibility: hidden; 
+  animation: showButton 2s 2s forwards; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-input {
+  display: flex;
+  width:60%;
+  flex-direction: column;
+  font-size:20px;
+  text-align: center;
+  background-color: #01000a;
+  opacity: 0.8;
+}
+
+#nameInput,#nationSelect {
+  height:40px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+} 
+
+.submit-user {
+  width: 50%;
+  font-size: 20px;
+  margin-top: 20px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#initial-status {
+  font-size:15px;
+  margin-top:15px;
+}
+
+
+@keyframes fadeIn {
+  from { background-color: #000213; }
+  to { background: linear-gradient(120deg, #01000a, #01000d); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes showButton {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible; 
+  }
+}

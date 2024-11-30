@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game Intro Animation</title>
+    <link rel="stylesheet" href="CSS/game.css">
+</head>
+<body>
+  <div class = "user-input">
+    <div class="username-input js-username-input">
+        <p>Welcome, Spy no.2431, tell me your name.</p>
+        <input id="nameInput" type="text" id="userName" placeholder="Enter your name" />
+      </div>
+
+      <div>
+        <p>Which country do you pledge allegiance to?</p>
+        <select id="nationSelect">
+          <option value="US">United States</option>
+          <option value="CN">China</option>
+          <option value="RU">Russia</option>
+          <option value="FR">France</option>
+          <option value="GB">United Kingdom</option>
+      </select>
+      </div>
+
+      <button class="submit-user" id ="submitUserButton">Let’s take a look at your and your opponent’s initial state.</button>
+      <div id = "initial-status"></div>
+  </div>  
+
+    <script src="scripts/saveUserData.js"></script>
+</body>
+</html>
